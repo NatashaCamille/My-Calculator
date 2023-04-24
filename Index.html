@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Simple Calculator" />
     <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <p>Practice makes prefect...</p>
 </head>
 <body> 
@@ -11,9 +14,40 @@
         <div class="calculator">
 			<div class="calcutaor_display"></div>	
             <div class="calculator_keys">
+                <h>Calculator</h>
+
                 <button>
             </div>
+            <div class="row_one">
+                <input type="text" name="result" id="result" placeholder="Result" />
+                <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+            </div>
+            <div class="row_tow">
+                    <input type="button" value="1" />
+                    <input type="button" value="2" />
+                    <input type="button" value="3" />
+                    <input type="button" value="+" />
+            </div>
+            <div class="row_three">
+                <input type="button" value="4" />
+                <input type="button" value="5" />
+                <input type="button" value="6" />
+                <input type="button" value="-" />
         </div>
-   </div> 
+        <div class="row_four">
+            <input type="button" value="7" />
+            <input type="button" value="8" />
+            <input type="button" value="9" />
+            <input type="button" value="x" />
+    </div>
+    <div class="row_five">
+        <input type="button" value="/" />
+        <input type="button" value="0" />
+        <input type="button" value="." />
+        <input type="button" value="=" />
+</div>
+        </div>
+   </div>
+   <script src="script.js"></script> 
 </body>
 </html>
